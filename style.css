@@ -19,12 +19,12 @@ footer {
 }
 
 .container {
-    width: 80%;
+    width: 82%;
     margin: 0 auto;
 }
 
 .wrapper {
-    width: 90%;
+    width: 82%;
     margin: 0 auto;
 }
 
@@ -40,10 +40,15 @@ header::after {
 
 h1 {
     float: left;
-    margin: 10px;
+    margin: 10px 0;
     font-family: 'Verdana', sans-serif;
     font-size: 40px;
     font-weight: normal;
+}
+
+h1 a {
+    text-decoration: none;
+    color: inherit;
 }
 
 nav {
@@ -71,4 +76,13 @@ nav a {
 
 nav a:hover {
     color: orange;
+}
+
+#projects {
+    padding-left: 24px;
+}
+
+#projects > li {
+    margin: 10px 0;
+    font-size: 20px; 
 }
