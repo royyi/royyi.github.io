@@ -1,8 +1,5 @@
 body {
   font-family: verdana;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
 }
 
 p {
@@ -26,7 +23,6 @@ header {
 main {
   display: flex;
   justify-content: center;
-  flex: 1;
 }
 
 .main_container {
@@ -100,3 +96,4 @@ h3 {
   font-weight: bold;
   font-size: 20px;
 }
+
