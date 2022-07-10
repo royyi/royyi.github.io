@@ -1,94 +1,102 @@
 body {
-    font-family: verdana;
+  font-family: verdana;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 p {
-    font-size: 20px;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 20px;
 }
 
 header {
-    /* background: lightgray; */
-    border-bottom: 1px solid lightgray;
+  display:flex;
+  justify-content: center;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 70px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.main_container {
+  width: 80%;
+  margin-top: 30px;
 }
 
 footer {
-    margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    color: dimgray;
+  color: dimgray;
 }
 
-.container {
-    width: 82%;
-    margin: 0 auto;
-}
-
-.wrapper {
-    width: 82%;
-    margin: 0 auto;
+#stripe {
+  background-color: lightgray;
+  height: 1px;
+  position: absolute;
+  width: 100%;
 }
 
 #profile {
-    margin-top: 30px;
-}
-
-header::after {
-    content: "";
-    display: table;
-    clear: both;
+  margin-bottom: 20px;
 }
 
 h1 {
-    float: left;
-    margin: 10px 0;
-    font-family: 'Verdana', sans-serif;
-    font-size: 40px;
-    font-weight: normal;
+  display: flex;
+  align-items: flex-end;
+  font-family: 'Verdana', sans-serif;
+  font-size: 40px;
+  font-weight: normal;
 }
 
 h1 a {
-    text-decoration: none;
-    color: inherit;
-}
-
-nav {
-    float: right;
+  text-decoration: none;
+  color: inherit;
 }
 
 nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  display: flex;
+  align-items: flex-end;
+  list-style: none;
+  height: 100%;
 }
 
 nav li {
-    display: inline-block;
-    margin-left: 70px;
-    padding-top: 25px;
+  margin-left: 70px;
+  margin-bottom: 12px;
 }
 
 nav a {
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: 0.3s;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s;
 }
 
 nav a:hover {
-    color: orange;
-}
-
-#projects {
-    padding-left: 24px;
+  color: orange;
 }
 
 #projects > li {
     margin: 10px 0;
-    font-size: 20px; 
+    font-size: 20px;
 }
 
 h2 {
-    font-weight: normal;
-    font-size: 24px;
-    text-decoration: underline;
+  font-weight: normal;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 20px;
 }
